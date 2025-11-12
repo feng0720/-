@@ -60,9 +60,9 @@ function Main() {
           {/* 中间图表占位 */}
           <div className="flex-1 flex items-center justify-center w-full pt-[10%]">
             <Charts shape={shape} company={company} setCompany={setCompany} theme={theme}></Charts>
-            <div className='absolute text-green-700 dark:text-orange-300 hover:scale-110 transition-all druation-500'>
-              {company==='all'?false:true&&<a href={company==='all'?'':Data[company].address} target='blank'>{company}</a>}
-            </div>
+            {shape&&<div className='absolute text-green-700 dark:text-orange-300 hover:scale-110 transition-all druation-500'>
+              {company!=="all"&&<a href={Data[company].address} target='blank'>{company}</a>}
+            </div>}
           </div>
 
           {/* 底部公司选择 */}

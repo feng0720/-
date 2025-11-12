@@ -184,5 +184,5 @@ export default function Charts({ shape = true, company = "all", setCompany, them
     };
   }, []);
 
-  return <div ref={chartRef} className="w-full h-[50vh]" />;
+  return (<div ref={chartRef} className="w-full h-[50vh]" />);
 }
