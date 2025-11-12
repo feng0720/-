@@ -32,7 +32,7 @@ export default function Footer() {
         "
       >
         <a
-          href="https://github.com"
+          href="https://github.com/feng0720/-"
           target="_blank"
           rel="noopener noreferrer"
           className="font-medium"
@@ -44,7 +44,7 @@ export default function Footer() {
 
       {/* 右侧：版权信息 */}
       <div className="text-center sm:text-right mt-2 sm:mt-0">
-        可视化平台 © 2024&nbsp;
+        ©
         <span className="text-blue-600 dark:text-sky-400">
           四家公司财务数据展示
         </span>

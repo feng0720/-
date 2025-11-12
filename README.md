@@ -1,18 +1,28 @@
-# React + Vite
+# 📊 四家公司财务数据可视化平台
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 基于 React + ECharts 构建的交互式财务数据可视化项目  
+> Visualization of financial data for Huawei, Xiaomi, Apple, and Tesla.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 项目简介 | Project Overview
 
-## React Compiler
+本项目展示了 **华为、小米、苹果、特斯拉** 四家公司的主要业务收入数据，  
+通过 **扇形图 / 饼图、堆叠柱状图** 等多维度可视化方式，直观展现不同业务的收入结构与对比情况。
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+平台提供了 **主题切换**、**动态交互**、**点击切换视图** 等交互功能，具有良好的视觉表现力与可操作性。
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## ✨ 功能特性 | Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🌓 **亮色 / 暗色主题切换**
+- 🍰 **单公司视图**：展示该公司的各业务结构（饼图或柱状图）
+- 🧱 **全部公司视图**：堆叠柱状图对比四家公司不同业务类别的收入占比
+- 📈 **动态动画与交互提示**
+- 📱 **响应式布局**，自适应不同屏幕设备
+- 🔗 **链接跳转**：可访问各公司官网
+- 💡
+
+>[!tips] tips
+>拉取项目之后记得`npm install`安装项目依赖
