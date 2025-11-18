@@ -5,11 +5,13 @@ import Charts from './components/Charts';
 import Content from './components/Content';
 import Footer from './components/Footer';
 import { Data } from './components/Data';
+import WorkChart from './components/WorkChart';
 
 function Main() {
   const {theme,setTheme} = useTheme(); 
   const [shape,setShape] = useState(true);
   const [company,setCompany] = useState('all');
+  const [showWork,setShowWork] = useState(false);
 
   // 切换图形
   const toggleShape = ()=>{
@@ -25,7 +27,11 @@ function Main() {
 
   return (
     <div >
-      <Head></Head>
+      <Head setShowWork={setShowWork}></Head>
+      {showWork&&
+      <div className='flex items-center justify-center'>
+        <WorkChart showWork={showWork} setShowWork={setShowWork}></WorkChart>
+      </div>}
       <div className='flex justify-between px-[5%] relative h-[70vh] transition-all bg-gradient-to-r from-cyan-100 via-blue-100 to-white
         dark:from-slate-900 dark:via-sky-900 dark:to-slate-800'>
         <div className="w-3/5 h-full relative flex flex-col items-center justify-start bg-gradient-to-r from-cyan-100 via-blue-100 to-white

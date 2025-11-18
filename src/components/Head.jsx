@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTheme } from "../Theme";
 import { Sun, Moon } from "lucide-react";
 
-export default function Head() {
+export default function Head({setShowWork}) {
   const [animate, setAnimate] = useState(true);
   const {theme,toggleTheme} = useTheme();
 
@@ -66,21 +66,21 @@ export default function Head() {
         
       {/* 组员列表 */}
       <div className="mt-4 flex flex-wrap justify-center gap-4 text-blue-600 dark:text-sky-200">
-        <div className="relative group hover:text-amber-600 hover:scale-105 transition-all duration-500 dark:hover:text-amber-400">
+        <div className="relative group hover:text-amber-600 hover:scale-105 transition-all duration-500 dark:hover:text-amber-400" onClick={()=>setShowWork(true)}>
           林金墙
           <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1 whitespace-nowrap opacity-0 group-hover:opacity-100 bg-sky-600 text-white text-xs     sm:text-sm rounded-md px-2 py-1 transition-opacity duration-300">
             前端开发可视化实现
           </span>
         </div>
         ·
-        <div className="relative group hover:text-amber-600 hover:scale-105 transition-all duration-500 dark:hover:text-amber-400">
+        <div className="relative group hover:text-amber-600 hover:scale-105 transition-all duration-500 dark:hover:text-amber-400" onClick={()=>setShowWork(true)}>
           潘宜昊
           <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1 whitespace-nowrap opacity-0 group-hover:opacity-100 bg-sky-600 text-white text-xs     sm:text-sm rounded-md px-2 py-1 transition-opacity duration-300">
             前端设计与开发工作
           </span>
         </div>
         ·
-        <div className="relative group hover:text-amber-600 hover:scale-105 transition-all duration-500 dark:hover:text-amber-400">
+        <div className="relative group hover:text-amber-600 hover:scale-105 transition-all duration-500 dark:hover:text-amber-400" onClick={()=>setShowWork(true)}>
           李衡翔
           <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1 whitespace-nowrap opacity-0 group-hover:opacity-100 bg-sky-600 text-white text-xs     sm:text-sm rounded-md px-2 py-1 transition-opacity duration-300">
             可视化分析设计工作
